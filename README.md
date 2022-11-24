@@ -1,16 +1,18 @@
-# PES-Assignment-7
+# PES-Assignment-7: RAGHU SAI PHANI SRIRAJ VEMPARALA
 
 ## Introduction
-The purpose of this assignment is to mathematically generate four tones in the form of analog signals. We will play the tones out using the DAC, and then link the DAC and ADC together and obtain the output. The following are the musical notes: 440 Hz (an A4); 587 Hz (a D5); 659 Hz (an E5); and 880 Hz (an A5). Each note should be played for one second. When playback reaches the end of this list, it should restart at the beginning. 
+The purpose of this assignment is to mathematically generate four tones in the form of analog signals. We will play the tones out using the DAC, and then link the DAC and ADC together and obtain the DAC output from ADC. The following are the musical notes: 440 Hz (an A4); 587 Hz (a D5); 659 Hz (an E5); and 880 Hz (an A5). Each note should be played for one second. When playback reaches the end of this list, it should restart at the beginning. 
 
 We will use the following parameters:
                                            
- Sampling rate: Output (DAC)-  48 kHz	               Input (ADC)-96 kHz         
- Resolution:    Output (DAC)- 12 bits per sample	    Input (ADC)-16 bits per sample 
+ Sampling rate: Output (DAC)-  48 kHz	                Input (ADC)-96 kHz         
+ Resolution:    Output (DAC)- 12 bits per sample	    Input (ADC)-16 bits per sample
+ 
+The main() function is present in the file frequencytonesmain(). The ADCfunctions.c has the functions related to ADC init and frequency generation and DACfunctions.c has the DAC init and conversion functions.
 
 ## oscilloscope output
-In Digital to analog conversion firstly initializing the DMA DAC and TIMER, after that every one second sampling the waveform in tone2sample function.
-once sampling is done then DMA interupt occurs in that loading DAC buffer with analog values. For every one second changes the tone, sample it and lastly DAC buffers is loadded when timer overflow flag sets. 
+
+In Digital to analog conversion the output from the DAC is verified by connecting the oscilloscope to pin PTE30. The following are the results obtained.
 
 
 Frequency_440Hz:
