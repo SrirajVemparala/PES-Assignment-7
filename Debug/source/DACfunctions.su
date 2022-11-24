@@ -1,0 +1,2 @@
+../source/DACfunctions.c:28:6:Init_DAC	8	static
+../source/DACfunctions.c:60:6:tone_to_sample	32	static

@@ -1,0 +1,6 @@
+C:\Users\USER\Documents\MCUXpressoIDE_11.6.0_8187\workspace\frequencytonesmain\CMSIS/core_cm0plus.h:745:22:NVIC_EnableIRQ	16	static
+C:\Users\USER\Documents\MCUXpressoIDE_11.6.0_8187\workspace\frequencytonesmain\CMSIS/core_cm0plus.h:791:22:NVIC_ClearPendingIRQ	16	static
+C:\Users\USER\Documents\MCUXpressoIDE_11.6.0_8187\workspace\frequencytonesmain\CMSIS/core_cm0plus.h:804:22:NVIC_SetPriority	24	static
+../source/DMAfunctions.c:29:6:Init_DMA	8	static
+../source/DMAfunctions.c:64:6:Start_DMA_transfer	16	static
+../source/DMAfunctions.c:90:6:DMA0_IRQHandler	8	static
