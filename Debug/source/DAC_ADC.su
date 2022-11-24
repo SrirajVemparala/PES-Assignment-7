@@ -1,0 +1,5 @@
+../source/DAC_ADC.c:31:6:Init_DAC	8	static
+../source/DAC_ADC.c:63:6:tone_to_sample	32	static
+../source/DAC_ADC.c:83:6:ADC0_init	8	static
+../source/DAC_ADC.c:112:11:start_adc	16	static
+../source/DAC_ADC.c:139:6:adc_param_calculation	40	static

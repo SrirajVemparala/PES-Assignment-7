@@ -1,0 +1,6 @@
+C:\Users\USER\Documents\MCUXpressoIDE_11.6.0_8187\workspace\Freqtones\CMSIS/core_cm0plus.h:804:22:NVIC_SetPriority	24	static
+../source/systick.c:22:6:init_systick	8	static
+../source/systick.c:33:12:now	8	static
+../source/systick.c:41:6:reset_timer	8	static
+../source/systick.c:49:12:get_timer	8	static
+../source/systick.c:57:6:SysTick_Handler	8	static
