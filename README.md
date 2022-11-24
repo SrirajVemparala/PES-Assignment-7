@@ -1,12 +1,12 @@
 # PES-Assignment-7
 
 ## Introduction
-The purpose of this assignment is to mathematically generate four pure tones in the form of analog signals. We will play the tones out using the DAC, and then sample the resulting analog output using the ADC. code should cycle through the following musical notes: 440 Hz (an A4); 587 Hz (a D5); 659 Hz (an E5); and 880 Hz (an A5). Each note should be played for one second. When playback reaches the end of this list, it should restart at the beginning. For analog_out, analog_in I have DAC.c DAC.h and ADC.c ADC.h respectively.
+The purpose of this assignment is to mathematically generate four tones in the form of analog signals. We will play the tones out using the DAC, and then link the DAC and ADC together and obtain the output. The following are the musical notes: 440 Hz (an A4); 587 Hz (a D5); 659 Hz (an E5); and 880 Hz (an A5). Each note should be played for one second. When playback reaches the end of this list, it should restart at the beginning. 
 
 We will use the following parameters:
                                            
- Sampling rate	-----> Output (DAC)-  48 kHz	               Input (ADC)-96 kHz         
- Resolution---------> Output (DAC)- 12 bits per sample	    Input (ADC)-16 bits per sample 
+ Sampling rate: Output (DAC)-  48 kHz	               Input (ADC)-96 kHz         
+ Resolution:    Output (DAC)- 12 bits per sample	    Input (ADC)-16 bits per sample 
 
 ## oscilloscope output
 In Digital to analog conversion firstly initializing the DMA DAC and TIMER, after that every one second sampling the waveform in tone2sample function.
