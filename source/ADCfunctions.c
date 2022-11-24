@@ -1,17 +1,16 @@
 /*
  *
  * Author: Vemparala Raghu Sai Phani Sriraj
- * File Name: DACfunctions.c
+ * File Name: ADCfunctions.c
  * Use: This file contains all the function definitions required for ADC to function properly.
  * Compiler: GCC
  * References:1. DEAN text book Chapter:6
  *
  */
 
-#include <DACfunctions.h>
+#include "ADCfunctions.h"
 #include "fp_trig.h"
 
-#define DAC_POS	(30)
 
 #define BUFFER_SIZE 1024
 #define ADC_SIZE	(65535)

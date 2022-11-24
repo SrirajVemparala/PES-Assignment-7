@@ -1,10 +1,12 @@
-/*Author: Raghu Sai Phani Sriraj Vemparala
+/*
  *
- * Reference: Dean's book.
+ * Author: Vemparala Raghu Sai Phani Sriraj
+ * File Name: frequencytonemain.c
+ * Use: This file is the entry point to the code.
+ * Compiler: GCC
  *
- *
- * Description: Entry point to functions
  */
+
 
 #include <stdio.h>
 #include "board.h"
