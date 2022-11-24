@@ -1,15 +1,16 @@
 # PES-Assignment-7
 
-In this assignment, we implemented DAC and ADC.
+## Introduction
+The purpose of this assignment is to mathematically generate four pure tones in the form of analog signals. We will play the tones out using the DAC, and then sample the resulting analog output using the ADC. code should cycle through the following musical notes: 440 Hz (an A4); 587 Hz (a D5); 659 Hz (an E5); and 880 Hz (an A5). Each note should be played for one second. When playback reaches the end of this list, it should restart at the beginning. For analog_out, analog_in I have DAC.c DAC.h and ADC.c ADC.h respectively.
 
-Once the sine wave is generated we fill the buffer for desired frequency.
+We will use the following parameters:
+                                           
+ Sampling rate	-----> Output (DAC)-  48 kHz	               Input (ADC)-96 kHz         
+ Resolution---------> Output (DAC)- 12 bits per sample	    Input (ADC)-16 bits per sample 
 
-After initializing the DAC and DMA ,I use TPM0 for DAC and we use DMA to transfer this buffer to DAC.
-
-Once DAC outputs, we configure ADC and we will use TPM1. I configure ADC such that output of DAC is input for ADC.
-
-Instead of analog_in or analog_out I have used ADC.c/ADC.h and DAC.c/DAC.h
-
+## oscilloscope output
+In Digital to analog conversion firstly initializing the DMA DAC and TIMER, after that every one second sampling the waveform in tone2sample function.
+once sampling is done then DMA interupt occurs in that loading DAC buffer with analog values. For every one second changes the tone, sample it and lastly DAC buffers is loadded when timer overflow flag sets. 
 
 
 Frequency_440Hz:
